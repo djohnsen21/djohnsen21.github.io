@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Readly - Personalized Reading Kits</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External stylesheet -->
+    <style>
+        /* Internal styles (for demonstration purposes) */
+        nav {
+            background-color: #ffffff;
+            padding: 10px;
+            position: fixed; /* Fixed element */
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007bff; /* Hover effect */
+        }
+        .cta-button {
+            padding: 20px 40px;      /* Increases button size by adding space inside */
+            font-size: 18px;         /* Enlarges the text */
+            border-radius: 10px;     /* Adds rounded corners */
+            background-color: #f6aa08; /* Optional: Changes the button color */
+            color: rgb(0, 0, 0);            /* Optional: Changes text color */
+            border: #000000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#subscriptions">Subscriptions</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <h1>Introducing Readly.</h1>
+        <h2>Unlock the Joy of Reading with Personalized Kits for ALL Ages!</h2>
+        <img src="smilechild.jpeg" class="hero-image">
+        <img src="smilechild2_42.jpg" class="hero-image">
+        <br>
+        <button class="cta-button">Take Our Free Assessment Quiz!</button>
+    </header>
+
+    <!-- Benefits Section -->
+    <section id="about" class="benefits-section">
+        <h2>Key Benefits</h2>
+        <ul>
+            <p>Personalized Reading Plans Tailored Just for You</p>
+            <p>Interactive Activities and Progress Tracking</p>
+            <p>Trusted by Families and Educators Worldwide</p>
+        </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <blockquote>"Readly transformed my child's learning experience!" – Parent Testimonial</blockquote>
+        <blockquote>"Readly made learning English as easy as pie!" - Non-English Speaker</blockquote>
+    </section>
+
+    <!-- Form section -->
+     <section id="form">
+        <h2>Optimize Your Readly Experience!</h2>
+        <h4>Take our survey and customize your reading kits!</h4>
+        <form action='#' method='get'>
+        <label>Name:</label><br />
+        <input type="text" name='name' id='the_name'>
+        <br /><br />
+        Primary Language:<br /> <input type = "text">
+        <br /><br />
+        Why are you using Readly? (Select one): <br />
+            <select name="whyReadly">
+            <option value="1"></option>
+            <option value="2">English is my second language</option>
+            <option value="3">My child needs to improve their reading</option>
+            <option value="4">I just want to improve my skills</option>
+            <option value="5">Other</option></select>
+        <br /><br />
+        <label>If other, please specify:</label><br />
+        <input type="text" name='other' id='other_reason'>
+        <br /><br />
+
+        <input type = "submit" value = "Submit!">
+        </form>
+     </section>
+
+    <!-- Subscription Section -->
+    <section id="subscriptions">
+        <h2>Choose Your Subscription</h2>
+        <table>
+            <tr>
+                <th>Plan</th>
+                <th>Price</th>
+                <th>Features</th>
+            </tr>
+            <tr>
+                <td>Monthly</td>
+                <td>$19.99</td>
+                <td>Access to 5 books and interactive resources</td>
+            </tr>
+            <tr>
+                <td>Annual</td>
+                <td>$199.99</td>
+                <td>Unlimited access to all content</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Readly. All Rights Reserved.</p>
+        <nav class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#subscriptions">Subscriptions</a>
+            <a href="#resources">Resources</a>
+            <a href="#contact">Contact</a>
+            <a href="#blog">Blog</a>
+            <a href="#terms">Terms & Conditions</a>
+            <a href="#privacy">Privacy Policy</a>
+        </nav>
+    </footer>
+</body>
+</html>
